@@ -17,7 +17,8 @@ return ( props ) => {
     }
     // let classes = props.attributes.className;
     classes = classes.replace(/span\d+/g, '');
-    classes = classes.replace(/grow|shrink/g, '');
+    classes = classes.replace(/flex-grow/g, '');
+    classes = classes.replace(/flex-shrink/g, '');
     classes = classes + ' ' + newspan;
     props.setAttributes({ className: classes }); 
   }
@@ -74,14 +75,14 @@ return ( props ) => {
                     title: 'grow',
                     icon: 'fullscreen-alt',
                     onClick: function() {
-                      removeOldAddNewSpan('grow');
+                      removeOldAddNewSpan('flex-grow');
                     }
                 },
                 {
                     title: 'shrink',
                     icon: 'fullscreen-exit-alt',
                     onClick: function() {
-                      removeOldAddNewSpan('shrink');
+                      removeOldAddNewSpan('flex-shrink');
                     }
                 },
             ] }
