@@ -17,6 +17,7 @@ return ( props ) => {
     }
     // let classes = props.attributes.className;
     classes = classes.replace(/span\d+/g, '');
+    classes = classes.replace(/grow|shrink/g, '');
     classes = classes + ' ' + newspan;
     props.setAttributes({ className: classes }); 
   }
