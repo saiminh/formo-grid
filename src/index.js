@@ -42,6 +42,7 @@ return ( props ) => {
     } else {
       classes = '';
     }
+    classes = classes.replace(/gridline/g, '');
     classes = classes.replaceAll(/(\b\s+gridline(?!-)\b|\b^gridline(?!-)\b)/g, '');
     classes = classes.replaceAll(/gridline-left/g, '');
     classes = classes.replaceAll(/gridline-middle-bg/g, '');
@@ -51,7 +52,7 @@ return ( props ) => {
     classes = classes.replace(/\s\s\s\s/g, ' ');
     classes = classes.replace(/\s\s\s/g, ' ');
     classes = classes.replace(/\s\s/g, ' ');
-    props.setAttributes({ className: classes }); 
+    props.setAttributes({ className: classes });     
   }
 
   if ( 'core/column' === props.name || 'core/group' === props.name ) {
