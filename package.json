@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/components": "22.1.0",
-    "@wordpress/icons": "9.13.0",
-    "@wordpress/scripts": "24.6.0"
+    "@wordpress/components": "28.8.0",
+    "@wordpress/icons": "10.8.0",
+    "@wordpress/scripts": "30.0.2"
   }
 }
